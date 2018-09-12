@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Mi Primera Pagina</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script>
+            function sumar(){
+                var txtPrimerNumero = document.getElementById("txtPrimerNumero");
+                var txtSegundoNumero = document.getElementById("txtSegundoNumero");
+                var txtResultado = document.getElementById("txtResultado");
+                txtResultado.value = Number(txtPrimerNumero.value) + Number(txtSegundoNumero.value);
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="seccion-bienvenida">
+            Esta es mi primera página WEB.
+            <div class="sumadora">
+                <input type="text" id="txtPrimerNumero"/>
+                <input type="text" id="txtSegundoNumero"/>
+                <input type="text" id="txtResultado"/>
+                <input type="button" value="Sumar" onclick="sumar()"/>        
+            </div>
+        </div>  
+
+    </body>
+</html>
